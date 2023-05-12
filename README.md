@@ -1,13 +1,13 @@
-# MagmaChat
+# BlazeChat
 MagmaLabs presents the best ChatGPT-style interface for GPT, written in Rails 7 with CableReady and StimulusReflex!
 
 ## Features
-MagmaChat is essentially still a proof of concept, but a lot of showstopper bugs have been shaken out in-house at MagmaLabs where we are using it as our corporate ChatGPT solution.
+BlazeChat is essentially still a proof of concept, but a lot of showstopper bugs have been shaken out in-house at MagmaLabs where we are using it as our corporate ChatGPT solution.
 ### Login with Google Oauth
 Eventually we should integrate Devise for many more authentication and user management options, but for now you need to sign in using a Google Account.
 
 ### Create and manage Bots and Conversations
-A conversation is an instance of a chat between a human and a bot. A bot is an anthropomorphized digital persona/autonomous agent configured in MagmaChat and brought to life using OpenAI’s API for chat completion (aka ChatGPT).
+A conversation is an instance of a chat between a human and a bot. A bot is an anthropomorphized digital persona/autonomous agent configured in BlazeChat and brought to life using OpenAI’s API for chat completion (aka ChatGPT).
 
 The default bot is Gerald. Talking to him is just like talking to ChatGPT directly, he has no special directive. If you are an admin, you can go to `/admin/bots` and experiment with creating additional bots with custom directives that make them take on specialized roles and/or personalities.
 
@@ -38,7 +38,7 @@ The user settings page is dynamically configured with entries in the i18n yaml f
 A dynamic text helper, backed by GPT itself, is used to generate static text in the user interface. This means that you can instantly internationalize your app by changing the preferred language in user settings. Admins can enter freeform text, while normal users get a dropdown with pre-approved selection options.
 
 ## Roadmap
-We plan to continue adding features (and outside code contributors! hint, hint) at a rapid pace over the coming months, as we strive to make MagmaChat the world’s best platform for building GPT-backed apps.
+We plan to continue adding features (and outside code contributors! hint, hint) at a rapid pace over the coming months, as we strive to make BlazeChat the world’s best platform for building GPT-backed apps.
 
 Here are some of the cool features we are envisioning:
 
@@ -94,9 +94,3 @@ Admin privileges are granted simply with the `admin` boolean attribute on `User`
 Once you have admin rights, you'll be able to access `/admin/bots` to create additional bots beyond just Gerald, the default GPT Assistant that's created automatically. Note that bots must be published in order to show up in the new chat screen for non-admin users. Draft bots show up to admin users so that they can be tested and refined prior to publication.
 
 Type /debug from any chat input to toggle visibility of hidden messages containing inline instructions to the bots from the platform.
-
-## Contributors
-
-We are actively looking for contributors to the project, and the code is littered with todos that present opportunities for independent research and/or feature enhancement.
-
-We must advise you that by submitting a Pull Request, you disavow any rights or claims to any changes submitted to the MagmaChat project and assign the copyright of those changes to Obie Fernandez & WeAreMagma Group, Inc. Should you be unable or unwilling to transfer those rights (as your employment agreement with your employer may prohibit such action), we advise against submitting a pull request. Instead, kindly open an issue and leave the task to be undertaken by another party. This is a common practice for such projects, rather than an exceptional occurrence. This section is essentially a legalistic expression conveying that "If you submit a PR to us, that code becomes our property". In actuality, this is what most people intend to happen 99.9% of the time, and we hope that it does not deter you from making contributions to the project.
